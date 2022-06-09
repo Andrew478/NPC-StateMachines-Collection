@@ -50,7 +50,7 @@ public class Ex01_Character : MonoBehaviour
     {
         position.y = transform.position.y;
 
-        transform.position = Vector3.MoveTowards(transform.position, position, Time.deltaTime);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(position - transform.position), Time.deltaTime * 120);
+        transform.position = Vector3.MoveTowards(transform.position, position, Time.deltaTime * 1.5f);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(position - transform.position), Time.deltaTime * 200);
     }
 }

@@ -29,7 +29,7 @@ public class PlayerBehaviorWalk : IPlayerBehavior
         else IsFinished = true;
 
         // если это состояние закончило выполняться, выходим из этого состояния
-        if (IsFinished) Exit();
+        if (IsFinished) { Exit(); return; }
     }
 
     public void Exit()
